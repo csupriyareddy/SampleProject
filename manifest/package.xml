@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
+        <members>AccountSaveController</members>
+        <members>TestAccountSaveController</members>
         <name>ApexClass</name>
+    </types>     
+    <types>
+        <members>SaveAccountContOpp</members>
+        <name>CustomTab</name>
     </types>
     <types>
         <members>*</members>
         <name>ApexComponent</name>
     </types>
     <types>
-        <members>*</members>
+        <members>SingleSaveExample</members>
         <name>ApexPage</name>
     </types>
     <types>
@@ -31,6 +36,10 @@
     <types>
         <members>*</members>
         <name>StaticResource</name>
+    </types-->
+     <types>
+        <members>Test_App</members>
+        <name>CustomApplication</name>
     </types>
     <version>51.0</version>
 </Package>
