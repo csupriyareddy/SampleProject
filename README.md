@@ -1,6 +1,6 @@
 # Commands for creating an Unlocked Package
 ## Authorize DevHub
-sfdx force:auth:web:login -d -a DevHub
+sfdx force:auth:web:login -d -a DevHub <br/>
 here **DevHub** is an alias of Salesforce instance where we enable "DevHub and Unlocked Packages and Second-Generation Managed Packages"
 ## Check sfdx-project.json
 {
@@ -9,13 +9,13 @@ here **DevHub** is an alias of Salesforce instance where we enable "DevHub and U
          "path": "force-app",
          "default": true
       }
-   ],
-   "namespace": "",
-   "sfdcLoginUrl": "https://login.salesforce.com",
-   "sourceApiVersion": "50.0"
-}
+   ], 
+   "namespace": "", 
+   "sfdcLoginUrl": "https://login.salesforce.com", 
+   "sourceApiVersion": "50.0" 
+} 
 ## Create the Package
-sfdx force:<zero-width space>package:create --name testunlocked  --description "testunlocked package" --packagetype Unlocked --path force-app --nonamespace --targetdevhubusername DevHub
+sfdx force:<zero-width space>package:create --name testunlocked  --description "testunlocked package" --packagetype Unlocked --path force-app --nonamespace --targetdevhubusername DevHub <br/>
 ## Create the Package Version
 sfdx force:<zero-width space>package:version:create -p testunlocked -d force-app -k test1234 --wait 10 -v DevHub --codecoverage
 --codecoverage
