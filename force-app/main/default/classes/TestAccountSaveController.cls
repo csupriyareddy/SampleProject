@@ -10,12 +10,12 @@ private class TestAccountSaveController {
         Contact contObj = new Contact();
         contObj.LastName ='Test Last Name';
         contObj.FirstName ='Test First Name';
-        Test.startTest();
+        System.Test.startTest();
             AccountSaveController actSaveControllerObj = new AccountSaveController();
             actSaveControllerObj.actObj = actObj;
             actSaveControllerObj.contactObj = contObj;
             actSaveControllerObj.oppObj = oppObj;        
             actSaveControllerObj.actSave();
-        Test.stopTest();
+        System.Test.stopTest();
     }
 }
