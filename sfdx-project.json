@@ -1,11 +1,18 @@
 {
     "packageDirectories": [
-       {
-          "path": "force-app",
-          "default": true
-       }
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "test3unlocked",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "50.0"
- }
+    "sourceApiVersion": "50.0",
+    "packageAliases": {
+        "test3unlocked": "0Ho5f000000TNFwCAO",
+        "test3unlocked@0.1.0-1": "04t5f000000eksWAAQ"
+    }
+}
